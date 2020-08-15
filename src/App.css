@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+* {
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: #000;
+	/* line-height: 40px; */
+
+}
+#logo {
+	width: 11%;
+	object-fit: contain;
+}
+.landing {
+	background-image: url('./hero.jpg');
+	background-size: cover;
+}
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 95vh;
+	width: 85%;
+	margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+	padding-top: 2rem;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+.btn {
+	background-color: red;
+	padding: 5px;
+	border: none;
+	color: white;
+	border-radius: 4px;
+	font-size: large;
+	width: 5em;
+	height: 35px;
+}
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* margin-bottom: 1em; */
+
+}
+.search {
+	display: flex;
+	flex-direction: row;
+}
+#big-search {
+	height: 9vh;
+	width: 38%;
+	margin-right: 0.1em;
+	border-radius: 2px 0px 0px 2px;
+	border: 1px solid #8c8c8c;
+}
+.search-btn {
+	width: 25%;
+	height: 9vh;
+	border-radius: 0px 2px 2px 0px;
+	text-transform: uppercase;
+	border: none;
+	font-size: 25px;
+	background-color: #e50914;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.big-heading {
+	font-size: 48px;
+	margin-bottom: 0.3em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.medium-heading {
+	font-size: 25px;
+	margin-bottom: 1em;
+}
+.small-heading {
+	font-size: 18px;
+	margin-bottom: 0.8em;
 }
 
-.App-link {
-  color: #61dafb;
+.filter {
+	background-color: rgba(0, 0, 0, 0.582);
+	width: 100%;
+	height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.divide {
+  border: 4px solid rgb(49, 49, 49);
+}
+
+.feature{
+	display: flex;
+	background-color: #000;
+	width: 90%;
+	margin: 3em auto;
+	justify-content: space-around;
+	/* align-items: center; */
+	height: 40vh;
+	margin-bottom: 11em;
+	position: relative;
+	
+}
+.tv {
+	height: 380px;
+	object-fit: contain;
+	position: relative;
+	z-index: 3;
+}
+
+.tv-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 8em;
+	z-index: 5;
+
+}
+.tv-video {
+	position: relative;
+	width: 380px;
+	bottom: 19em;
+	left: 3.8em;
+	object-fit: contain;
+	
+}
+
+.tv-video2 {
+	position: relative;
+	width: 300px;
+	bottom: 20em;
+	left: 6em;
+	object-fit: contain;	
+}
+.mobile {
+	position: absolute;
+	left: 0.6em;
+}
+.mobile-text {
+	margin-top: 1.4em;
+	margin-left: 0.1em;
+}
+.mobile-overlay {
+	display: flex;
+	justify-content: space-evenly;
+	width: 340px;
+	height: 90px;
+	background-color: rgba(0, 0, 0, 0.966);
+	border-radius: 10px;
+	z-index: 3;
+	position: relative;
+	top: 16.6em;
+	border: 2px solid rgb(77, 75, 75);
+	
+}
+.mobile-animation {
+	margin-top: 1.2em;
+	width: 50px;
+	height: 50px;
+}
+.boxshot {
+	width: 20%;
+	margin-top: 0.3em;
+	object-fit: contain;
+}
+.faq-container{
+	width: 63%;
+	margin: 4em auto;
+}
+.faq-container h1{
+	text-transform: capitalize;
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 1em;
+
+}
+.faq-header p{
+	font-size: 30px;
+	background-color: #303030;
+	margin-bottom: 0.3em;
+	padding: 0.6em 0.8em;
+	cursor: pointer;
+	/* text-align: center; */
+}
+.faq-content{
+	margin-top: -8px;
+	background-color: #303030;
+	margin-bottom: 0.4em;
+	padding: 1em 0.3em;
+
+}
+.faq-content p{
+	margin: 1em 1.5em ;
+	/* margin-bottom: 1em; */
+	font-size: 26px;
 }
